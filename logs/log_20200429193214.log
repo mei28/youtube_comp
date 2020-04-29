@@ -1,0 +1,7 @@
+DEBUG:root:./logs/log_20200429193214.log
+DEBUG:root:['year', 'month', 'day', 'hour', 'minute', 'c_year', 'c_month', 'c_day', 'length_tags']
+DEBUG:root:(19720, 9)
+DEBUG:root:{'boosting_type': 'gbdt', 'metric': 'rmse', 'objective': 'regression', 'seed': 20, 'learning_rate': 0.01, 'n_jobs': -1, 'verbose': -1}
+DEBUG:main:[30]	valid_0's rmse: 3.60403e+07
+DEBUG:main:[60]	valid_0's rmse: 3.58641e+07
+DEBUG:main:[90]	valid_0's rmse: 3.58197e+07

@@ -1,0 +1,2 @@
+DEBUG:root:./logs/log_20200429201427.log
+DEBUG:root:['year', 'month', 'day', 'hour', 'minute', 'c_year', 'c_month', 'c_day', 'length_tags', 'categoryId', 'likes', 'dislikes', 'comment_count', 'comment_disabled', 'ratings_disabled']

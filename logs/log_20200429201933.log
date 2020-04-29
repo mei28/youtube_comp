@@ -1,0 +1,46 @@
+DEBUG:root:./logs/log_20200429201933.log
+DEBUG:root:['year', 'month', 'day', 'hour', 'minute', 'c_year', 'c_month', 'c_day', 'length_tags', 'category_id', 'likes', 'dislikes', 'comment_count', 'comments_disabled', 'ratings_disabled']
+DEBUG:root:(19720, 15)
+DEBUG:root:{'boosting_type': 'gbdt', 'metric': 'rmse', 'objective': 'regression', 'seed': 20, 'learning_rate': 0.01, 'n_jobs': -1, 'verbose': -1}
+DEBUG:main:[30]	valid_0's rmse: 3.30979e+07
+DEBUG:main:[60]	valid_0's rmse: 3.11029e+07
+DEBUG:main:[90]	valid_0's rmse: 2.99233e+07
+DEBUG:main:[120]	valid_0's rmse: 2.92353e+07
+DEBUG:main:[150]	valid_0's rmse: 2.88644e+07
+DEBUG:main:[180]	valid_0's rmse: 2.86632e+07
+DEBUG:main:[210]	valid_0's rmse: 2.85787e+07
+DEBUG:main:[240]	valid_0's rmse: 2.85529e+07
+DEBUG:root:254
+DEBUG:root:28546930.4523818
+DEBUG:root:{'boosting_type': 'gbdt', 'metric': 'rmse', 'objective': 'regression', 'seed': 20, 'learning_rate': 0.01, 'n_jobs': -1, 'verbose': -1}
+DEBUG:main:[30]	valid_0's rmse: 2.9089e+07
+DEBUG:main:[60]	valid_0's rmse: 2.57895e+07
+DEBUG:main:[90]	valid_0's rmse: 2.34975e+07
+DEBUG:main:[120]	valid_0's rmse: 2.19594e+07
+DEBUG:main:[150]	valid_0's rmse: 2.09152e+07
+DEBUG:main:[180]	valid_0's rmse: 2.01907e+07
+DEBUG:main:[210]	valid_0's rmse: 1.96816e+07
+DEBUG:main:[240]	valid_0's rmse: 1.92996e+07
+DEBUG:main:[270]	valid_0's rmse: 1.90106e+07
+DEBUG:main:[300]	valid_0's rmse: 1.86438e+07
+DEBUG:main:[330]	valid_0's rmse: 1.85048e+07
+DEBUG:main:[360]	valid_0's rmse: 1.83976e+07
+DEBUG:main:[390]	valid_0's rmse: 1.83125e+07
+DEBUG:main:[420]	valid_0's rmse: 1.82597e+07
+DEBUG:root:416
+DEBUG:root:18258144.801463164
+DEBUG:root:{'boosting_type': 'gbdt', 'metric': 'rmse', 'objective': 'regression', 'seed': 20, 'learning_rate': 0.01, 'n_jobs': -1, 'verbose': -1}
+DEBUG:main:[30]	valid_0's rmse: 1.79324e+07
+DEBUG:main:[60]	valid_0's rmse: 1.42909e+07
+DEBUG:main:[90]	valid_0's rmse: 1.17695e+07
+DEBUG:main:[120]	valid_0's rmse: 1.01982e+07
+DEBUG:main:[150]	valid_0's rmse: 9.29438e+06
+DEBUG:main:[180]	valid_0's rmse: 8.79131e+06
+DEBUG:main:[210]	valid_0's rmse: 8.47834e+06
+DEBUG:main:[240]	valid_0's rmse: 8.29111e+06
+DEBUG:main:[270]	valid_0's rmse: 8.226e+06
+DEBUG:root:264
+DEBUG:root:8221574.9122205265
+DEBUG:root:=====CV Scores=====
+DEBUG:root:[28546930.4523818, 18258144.801463164, 8221574.9122205265]
+DEBUG:root:18342216.72202183
