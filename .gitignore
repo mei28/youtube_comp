@@ -1,0 +1,13 @@
+# files under ./data
+data/*/*.feather
+data/*/*.csv
+data/*/*.tsv
+data/*/*.zip
+features/*.feather
+features/importances/*.png
+
+.youtube_env
+
+*/__pycache__/*
+
+*.egg-info/

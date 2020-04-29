@@ -1,0 +1,16 @@
+
+# local package
+-e .
+
+
+
+# external requirements
+click
+pandas 
+numpy
+matplotlib
+scikit-learn
+seaborn
+jupyter
+flake8
+autopep8
