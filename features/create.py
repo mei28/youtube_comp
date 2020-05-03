@@ -6,6 +6,7 @@ from base import Feature, get_arguments, generate_features
 
 Feature.dir = 'features'
 
+
 # """sample usage
 # """
 # class Pclass(Feature):
@@ -115,6 +116,19 @@ class Ratings_disabled(Feature):
     def create_features(self):
         self.train["ratings_disabled"] = train['ratings_disabled']
         self.test["ratings_disabled"] = test['ratings_disabled']
+
+
+class Channel_id_enc(Feature):
+    def create_features(self):
+        from sklearn.preprocessing import LabelEncoder
+        le = LabelEncoder()
+        cat_cols = 'channelId'
+        df_all = pd.concat([train[cat_cols], test[cat_cols]])
+        le.fit(df_all)
+        self.train['channelId_enc'] = le.transform(train[cat_cols])
+        self.test['channelId_enc'] = le.transform(test[cat_cols])
+        # self.train["channel_id_enc"] = le.fit_transform(train[cat_cols])
+        # self.test["channel_id_enc"] = le.fit_transform(test[cat_cols])
 
 
 if __name__ == '__main__':

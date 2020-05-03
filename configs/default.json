@@ -14,13 +14,14 @@
     "dislikes",
     "comment_count",
     "comments_disabled",
-    "ratings_disabled"
+    "ratings_disabled",
+    "channel_id_enc"
   ],
   "lgbm_params": {
     "boosting_type": "gbdt",
     "metric": "rmse",
     "objective": "regression",
-    "seed": 20,
+    "seed": 777,
     "learning_rate": 0.01,
     "n_jobs": -1,
     "verbose": -1
