@@ -1,0 +1,232 @@
+DEBUG:root:./logs/log_20200502144140.log
+DEBUG:root:['year', 'month', 'day', 'hour', 'minute', 'c_year', 'c_month', 'c_day', 'length_tags', 'category_id', 'likes', 'dislikes', 'comment_count', 'comments_disabled', 'ratings_disabled']
+DEBUG:root:(19720, 15)
+DEBUG:root:{'boosting_type': 'gbdt', 'metric': 'rmse', 'objective': 'regression', 'seed': 777, 'learning_rate': 0.01, 'n_jobs': -1, 'verbose': -1}
+DEBUG:main:[30]	valid_0's rmse: 1.84399
+DEBUG:main:[60]	valid_0's rmse: 1.51174
+DEBUG:main:[90]	valid_0's rmse: 1.28629
+DEBUG:main:[120]	valid_0's rmse: 1.13636
+DEBUG:main:[150]	valid_0's rmse: 1.03887
+DEBUG:main:[180]	valid_0's rmse: 0.975828
+DEBUG:main:[210]	valid_0's rmse: 0.93598
+DEBUG:main:[240]	valid_0's rmse: 0.910198
+DEBUG:main:[270]	valid_0's rmse: 0.893849
+DEBUG:main:[300]	valid_0's rmse: 0.882359
+DEBUG:main:[330]	valid_0's rmse: 0.875115
+DEBUG:main:[360]	valid_0's rmse: 0.869586
+DEBUG:main:[390]	valid_0's rmse: 0.865696
+DEBUG:main:[420]	valid_0's rmse: 0.863118
+DEBUG:main:[450]	valid_0's rmse: 0.861403
+DEBUG:main:[480]	valid_0's rmse: 0.859635
+DEBUG:main:[510]	valid_0's rmse: 0.858399
+DEBUG:main:[540]	valid_0's rmse: 0.856994
+DEBUG:main:[570]	valid_0's rmse: 0.855938
+DEBUG:main:[600]	valid_0's rmse: 0.854686
+DEBUG:main:[630]	valid_0's rmse: 0.853533
+DEBUG:main:[660]	valid_0's rmse: 0.85245
+DEBUG:main:[690]	valid_0's rmse: 0.851211
+DEBUG:main:[720]	valid_0's rmse: 0.850087
+DEBUG:main:[750]	valid_0's rmse: 0.848588
+DEBUG:main:[780]	valid_0's rmse: 0.847393
+DEBUG:main:[810]	valid_0's rmse: 0.846247
+DEBUG:main:[840]	valid_0's rmse: 0.845432
+DEBUG:root:848
+DEBUG:root:0.8453053172087077
+DEBUG:root:{'boosting_type': 'gbdt', 'metric': 'rmse', 'objective': 'regression', 'seed': 777, 'learning_rate': 0.01, 'n_jobs': -1, 'verbose': -1}
+DEBUG:main:[30]	valid_0's rmse: 0.160739
+DEBUG:main:[60]	valid_0's rmse: 0.13448
+DEBUG:main:[90]	valid_0's rmse: 0.117213
+DEBUG:main:[120]	valid_0's rmse: 0.105883
+DEBUG:main:[150]	valid_0's rmse: 0.0983275
+DEBUG:main:[180]	valid_0's rmse: 0.0933855
+DEBUG:main:[210]	valid_0's rmse: 0.0902091
+DEBUG:main:[240]	valid_0's rmse: 0.0881226
+DEBUG:main:[270]	valid_0's rmse: 0.0866664
+DEBUG:main:[300]	valid_0's rmse: 0.0858211
+DEBUG:main:[330]	valid_0's rmse: 0.0853044
+DEBUG:main:[360]	valid_0's rmse: 0.0848801
+DEBUG:main:[390]	valid_0's rmse: 0.0845126
+DEBUG:main:[420]	valid_0's rmse: 0.0842984
+DEBUG:main:[450]	valid_0's rmse: 0.0841885
+DEBUG:main:[480]	valid_0's rmse: 0.0841286
+DEBUG:main:[510]	valid_0's rmse: 0.0840524
+DEBUG:root:517
+DEBUG:root:0.08401882649912465
+DEBUG:root:{'boosting_type': 'gbdt', 'metric': 'rmse', 'objective': 'regression', 'seed': 777, 'learning_rate': 0.01, 'n_jobs': -1, 'verbose': -1}
+DEBUG:main:[30]	valid_0's rmse: 0.0447758
+DEBUG:main:[60]	valid_0's rmse: 0.0374478
+DEBUG:main:[90]	valid_0's rmse: 0.0326358
+DEBUG:main:[120]	valid_0's rmse: 0.0295484
+DEBUG:main:[150]	valid_0's rmse: 0.02758
+DEBUG:main:[180]	valid_0's rmse: 0.0264142
+DEBUG:main:[210]	valid_0's rmse: 0.0256869
+DEBUG:main:[240]	valid_0's rmse: 0.0252413
+DEBUG:main:[270]	valid_0's rmse: 0.0249214
+DEBUG:main:[300]	valid_0's rmse: 0.0246966
+DEBUG:main:[330]	valid_0's rmse: 0.0245268
+DEBUG:main:[360]	valid_0's rmse: 0.0244041
+DEBUG:main:[390]	valid_0's rmse: 0.0243233
+DEBUG:main:[420]	valid_0's rmse: 0.0242529
+DEBUG:main:[450]	valid_0's rmse: 0.0241976
+DEBUG:main:[480]	valid_0's rmse: 0.0241434
+DEBUG:main:[510]	valid_0's rmse: 0.0241104
+DEBUG:main:[540]	valid_0's rmse: 0.0240652
+DEBUG:main:[570]	valid_0's rmse: 0.0240306
+DEBUG:main:[600]	valid_0's rmse: 0.0239793
+DEBUG:main:[630]	valid_0's rmse: 0.0239463
+DEBUG:main:[660]	valid_0's rmse: 0.023914
+DEBUG:main:[690]	valid_0's rmse: 0.0238939
+DEBUG:main:[720]	valid_0's rmse: 0.0238799
+DEBUG:main:[750]	valid_0's rmse: 0.02384
+DEBUG:main:[780]	valid_0's rmse: 0.0238163
+DEBUG:main:[810]	valid_0's rmse: 0.0237946
+DEBUG:root:828
+DEBUG:root:0.023788140048672562
+DEBUG:root:{'boosting_type': 'gbdt', 'metric': 'rmse', 'objective': 'regression', 'seed': 777, 'learning_rate': 0.01, 'n_jobs': -1, 'verbose': -1}
+DEBUG:main:[30]	valid_0's rmse: 0.0190719
+DEBUG:main:[60]	valid_0's rmse: 0.015788
+DEBUG:main:[90]	valid_0's rmse: 0.0135883
+DEBUG:main:[120]	valid_0's rmse: 0.0121736
+DEBUG:main:[150]	valid_0's rmse: 0.0113166
+DEBUG:main:[180]	valid_0's rmse: 0.0108405
+DEBUG:main:[210]	valid_0's rmse: 0.0105605
+DEBUG:main:[240]	valid_0's rmse: 0.010432
+DEBUG:main:[270]	valid_0's rmse: 0.010349
+DEBUG:main:[300]	valid_0's rmse: 0.0102914
+DEBUG:main:[330]	valid_0's rmse: 0.0102388
+DEBUG:main:[360]	valid_0's rmse: 0.0101987
+DEBUG:main:[390]	valid_0's rmse: 0.0101755
+DEBUG:main:[420]	valid_0's rmse: 0.0101695
+DEBUG:main:[450]	valid_0's rmse: 0.0101521
+DEBUG:main:[480]	valid_0's rmse: 0.0101378
+DEBUG:root:488
+DEBUG:root:0.010135499809901674
+DEBUG:root:{'boosting_type': 'gbdt', 'metric': 'rmse', 'objective': 'regression', 'seed': 777, 'learning_rate': 0.01, 'n_jobs': -1, 'verbose': -1}
+DEBUG:main:[30]	valid_0's rmse: 0.0105894
+DEBUG:main:[60]	valid_0's rmse: 0.00877647
+DEBUG:main:[90]	valid_0's rmse: 0.00755782
+DEBUG:main:[120]	valid_0's rmse: 0.00677991
+DEBUG:main:[150]	valid_0's rmse: 0.00628954
+DEBUG:main:[180]	valid_0's rmse: 0.00597657
+DEBUG:main:[210]	valid_0's rmse: 0.00579109
+DEBUG:main:[240]	valid_0's rmse: 0.00567234
+DEBUG:main:[270]	valid_0's rmse: 0.00559342
+DEBUG:main:[300]	valid_0's rmse: 0.00554774
+DEBUG:main:[330]	valid_0's rmse: 0.00550691
+DEBUG:main:[360]	valid_0's rmse: 0.00547788
+DEBUG:main:[390]	valid_0's rmse: 0.00544892
+DEBUG:main:[420]	valid_0's rmse: 0.00543104
+DEBUG:main:[450]	valid_0's rmse: 0.00541227
+DEBUG:main:[480]	valid_0's rmse: 0.0053869
+DEBUG:main:[510]	valid_0's rmse: 0.00537244
+DEBUG:main:[540]	valid_0's rmse: 0.00536184
+DEBUG:main:[570]	valid_0's rmse: 0.00535082
+DEBUG:main:[600]	valid_0's rmse: 0.0053406
+DEBUG:main:[630]	valid_0's rmse: 0.00533441
+DEBUG:root:638
+DEBUG:root:0.005332707251297065
+DEBUG:root:{'boosting_type': 'gbdt', 'metric': 'rmse', 'objective': 'regression', 'seed': 777, 'learning_rate': 0.01, 'n_jobs': -1, 'verbose': -1}
+DEBUG:main:[30]	valid_0's rmse: 0.00671533
+DEBUG:main:[60]	valid_0's rmse: 0.00550861
+DEBUG:main:[90]	valid_0's rmse: 0.00469411
+DEBUG:main:[120]	valid_0's rmse: 0.00417381
+DEBUG:main:[150]	valid_0's rmse: 0.00384743
+DEBUG:main:[180]	valid_0's rmse: 0.00364762
+DEBUG:main:[210]	valid_0's rmse: 0.00351907
+DEBUG:main:[240]	valid_0's rmse: 0.00344556
+DEBUG:main:[270]	valid_0's rmse: 0.00340137
+DEBUG:main:[300]	valid_0's rmse: 0.00337712
+DEBUG:main:[330]	valid_0's rmse: 0.00335675
+DEBUG:main:[360]	valid_0's rmse: 0.0033328
+DEBUG:main:[390]	valid_0's rmse: 0.00331749
+DEBUG:main:[420]	valid_0's rmse: 0.00330538
+DEBUG:main:[450]	valid_0's rmse: 0.00329403
+DEBUG:main:[480]	valid_0's rmse: 0.00328664
+DEBUG:main:[510]	valid_0's rmse: 0.0032789
+DEBUG:main:[540]	valid_0's rmse: 0.0032738
+DEBUG:main:[570]	valid_0's rmse: 0.00326941
+DEBUG:root:587
+DEBUG:root:0.0032667331557129447
+DEBUG:root:{'boosting_type': 'gbdt', 'metric': 'rmse', 'objective': 'regression', 'seed': 777, 'learning_rate': 0.01, 'n_jobs': -1, 'verbose': -1}
+DEBUG:main:[30]	valid_0's rmse: 0.00507657
+DEBUG:main:[60]	valid_0's rmse: 0.00424112
+DEBUG:main:[90]	valid_0's rmse: 0.00369477
+DEBUG:main:[120]	valid_0's rmse: 0.00333859
+DEBUG:main:[150]	valid_0's rmse: 0.00311869
+DEBUG:main:[180]	valid_0's rmse: 0.00298821
+DEBUG:main:[210]	valid_0's rmse: 0.00290438
+DEBUG:main:[240]	valid_0's rmse: 0.00285461
+DEBUG:main:[270]	valid_0's rmse: 0.00282115
+DEBUG:main:[300]	valid_0's rmse: 0.00279903
+DEBUG:main:[330]	valid_0's rmse: 0.00277942
+DEBUG:main:[360]	valid_0's rmse: 0.00276191
+DEBUG:main:[390]	valid_0's rmse: 0.00274889
+DEBUG:main:[420]	valid_0's rmse: 0.00273967
+DEBUG:main:[450]	valid_0's rmse: 0.00273143
+DEBUG:main:[480]	valid_0's rmse: 0.00272083
+DEBUG:main:[510]	valid_0's rmse: 0.00271365
+DEBUG:main:[540]	valid_0's rmse: 0.00270812
+DEBUG:root:530
+DEBUG:root:0.002707332465743455
+DEBUG:root:{'boosting_type': 'gbdt', 'metric': 'rmse', 'objective': 'regression', 'seed': 777, 'learning_rate': 0.01, 'n_jobs': -1, 'verbose': -1}
+DEBUG:main:[30]	valid_0's rmse: 0.00375411
+DEBUG:main:[60]	valid_0's rmse: 0.00320919
+DEBUG:main:[90]	valid_0's rmse: 0.00283453
+DEBUG:main:[120]	valid_0's rmse: 0.00258735
+DEBUG:main:[150]	valid_0's rmse: 0.00242919
+DEBUG:main:[180]	valid_0's rmse: 0.0023278
+DEBUG:main:[210]	valid_0's rmse: 0.00226145
+DEBUG:main:[240]	valid_0's rmse: 0.00221358
+DEBUG:main:[270]	valid_0's rmse: 0.00218193
+DEBUG:main:[300]	valid_0's rmse: 0.00216339
+DEBUG:main:[330]	valid_0's rmse: 0.00215294
+DEBUG:main:[360]	valid_0's rmse: 0.00214582
+DEBUG:main:[390]	valid_0's rmse: 0.00213825
+DEBUG:main:[420]	valid_0's rmse: 0.00213111
+DEBUG:main:[450]	valid_0's rmse: 0.00212828
+DEBUG:root:456
+DEBUG:root:0.002127993810025682
+DEBUG:root:{'boosting_type': 'gbdt', 'metric': 'rmse', 'objective': 'regression', 'seed': 777, 'learning_rate': 0.01, 'n_jobs': -1, 'verbose': -1}
+DEBUG:main:[30]	valid_0's rmse: 0.00272972
+DEBUG:main:[60]	valid_0's rmse: 0.00230261
+DEBUG:main:[90]	valid_0's rmse: 0.0020059
+DEBUG:main:[120]	valid_0's rmse: 0.00180881
+DEBUG:main:[150]	valid_0's rmse: 0.00167739
+DEBUG:main:[180]	valid_0's rmse: 0.001592
+DEBUG:main:[210]	valid_0's rmse: 0.00153771
+DEBUG:main:[240]	valid_0's rmse: 0.0015027
+DEBUG:main:[270]	valid_0's rmse: 0.00147966
+DEBUG:main:[300]	valid_0's rmse: 0.00146195
+DEBUG:main:[330]	valid_0's rmse: 0.00145199
+DEBUG:main:[360]	valid_0's rmse: 0.00144356
+DEBUG:main:[390]	valid_0's rmse: 0.00144029
+DEBUG:main:[420]	valid_0's rmse: 0.00143837
+DEBUG:root:411
+DEBUG:root:0.001438363557354464
+DEBUG:root:{'boosting_type': 'gbdt', 'metric': 'rmse', 'objective': 'regression', 'seed': 777, 'learning_rate': 0.01, 'n_jobs': -1, 'verbose': -1}
+DEBUG:main:[30]	valid_0's rmse: 0.00268266
+DEBUG:main:[60]	valid_0's rmse: 0.00236885
+DEBUG:main:[90]	valid_0's rmse: 0.00216911
+DEBUG:main:[120]	valid_0's rmse: 0.00203459
+DEBUG:main:[150]	valid_0's rmse: 0.00194431
+DEBUG:main:[180]	valid_0's rmse: 0.00188649
+DEBUG:main:[210]	valid_0's rmse: 0.0018361
+DEBUG:main:[240]	valid_0's rmse: 0.00180235
+DEBUG:main:[270]	valid_0's rmse: 0.00177493
+DEBUG:main:[300]	valid_0's rmse: 0.00174775
+DEBUG:main:[330]	valid_0's rmse: 0.00172896
+DEBUG:main:[360]	valid_0's rmse: 0.00171598
+DEBUG:main:[390]	valid_0's rmse: 0.00170467
+DEBUG:main:[420]	valid_0's rmse: 0.00169681
+DEBUG:main:[450]	valid_0's rmse: 0.00169385
+DEBUG:main:[480]	valid_0's rmse: 0.00169065
+DEBUG:main:[510]	valid_0's rmse: 0.00168814
+DEBUG:main:[540]	valid_0's rmse: 0.00168423
+DEBUG:main:[570]	valid_0's rmse: 0.00167817
+DEBUG:main:[600]	valid_0's rmse: 0.00167506
+DEBUG:main:[630]	valid_0's rmse: 0.00167219
+DEBUG:root:640
+DEBUG:root:0.001671663766780047
+DEBUG:root:=====CV Scores=====
+DEBUG:root:[0.8453053172087077, 0.08401882649912465, 0.023788140048672562, 0.010135499809901674, 0.005332707251297065, 0.0032667331557129447, 0.002707332465743455, 0.002127993810025682, 0.001438363557354464, 0.001671663766780047]
+DEBUG:root:0.09797925775733204
