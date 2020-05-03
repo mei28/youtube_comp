@@ -39,7 +39,7 @@ models = []
 
 lgbm_params = config['lgbm_params']
 
-kf = KFold(n_splits=3, random_state=0)
+kf = KFold(n_splits=2, random_state=777, shuffle=True)
 for train_index, valid_index in kf.split(X_train_all):
     X_train, X_valid = (
         X_train_all.iloc[train_index, :], X_train_all.iloc[valid_index, :]
@@ -81,7 +81,9 @@ y_sub = sum(y_preds) / len(y_preds)
 
 sub[target_name] = y_sub
 
-sub.to_csv(
-    './data/output/sub_{0:%Y%m%d%H%M%S}_{1}.csv'.format(now, score),
-    index=False
-)
+
+# sub.to_csv(
+#     './data/output/sub_{0:%Y%m%d%H%M%S}_{1}.csv'.format(now, score),
+#     index=False
+# )
+

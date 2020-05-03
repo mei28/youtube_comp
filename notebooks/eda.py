@@ -14,3 +14,8 @@ print(train.info())
 print(test.isnull().sum())
 print(test.shape)
 print(test.info())
+
+# %%
+display(train['channelId'])
+
+# %%
