@@ -15,7 +15,18 @@
     "comment_count",
     "comments_disabled",
     "ratings_disabled",
-    "channel_id_enc"
+    "channel_id_enc",
+    "likes_rate",
+    "dislikes_rate",
+    "channel_title_enc",
+    "likes_dislikes_rate",
+    "comment_likes_dislikes_ratio",
+    "likes_comments_disable",
+    "delta_time",
+    "description",
+    "music",
+    "official",
+    "cm"
   ],
   "lgbm_params": {
     "boosting_type": "gbdt",
@@ -24,7 +35,12 @@
     "seed": 777,
     "learning_rate": 0.01,
     "n_jobs": -1,
-    "verbose": -1
+    "verbose": -1,
+    "max_depth": 7,
+    "reg_alpha": 1,
+    "reg_lambda": 1,
+    "num_leaves": 8,
+    "colsample_bytree": 0.8
   },
   "loss": "rmse",
   "target_name": "y",
