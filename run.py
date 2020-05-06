@@ -40,6 +40,7 @@ models = []
 lgbm_params = config['lgbm_params']
 
 kf = KFold(n_splits=2, random_state=777, shuffle=True)
+
 for train_index, valid_index in kf.split(X_train_all):
     X_train, X_valid = (
         X_train_all.iloc[train_index, :], X_train_all.iloc[valid_index, :]
@@ -54,12 +55,15 @@ for train_index, valid_index in kf.split(X_train_all):
     )
     # RMSLEの逆変換
     y_pred = np.expm1(y_pred)
+    y_pred[y_pred < 0] = 0
     # 結果の保存
     y_preds.append(y_pred)
     models.append(model)
 
     # スコア
     log_best(model, config['loss'])
+    logging.debug(pd.DataFrame({'features': X_train.columns, 'importance': model.feature_importance(
+    )}).sort_values('importance', ascending=False))
 
 scores = [m.best_score['valid_0'][config['loss']] for m in models]
 
@@ -82,8 +86,7 @@ y_sub = sum(y_preds) / len(y_preds)
 sub[target_name] = y_sub
 
 
-# sub.to_csv(
-#     './data/output/sub_{0:%Y%m%d%H%M%S}_{1}.csv'.format(now, score),
-#     index=False
-# )
-
+sub.to_csv(
+    './data/output/sub_{0:%Y%m%d%H%M%S}_{1}.csv'.format(now, score),
+    index=False
+)
