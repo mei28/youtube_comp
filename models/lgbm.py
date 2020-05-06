@@ -4,7 +4,8 @@ import logging
 
 from logs.logger import log_evaluation
 
-import matplotlib.pyplot as plt 
+import matplotlib.pyplot as plt
+
 
 def train_and_predict(X_train, X_valid, y_train, y_valid, X_test, lgbm_params):
     # データセットの作成
@@ -27,6 +28,6 @@ def train_and_predict(X_train, X_valid, y_train, y_valid, X_test, lgbm_params):
     )
 
     y_pred = model.predict(X_test, num_iteration=model.best_iteration)
-    lgb.plot_importance(model, importance_type="gain", max_num_features=20,figsize=(12,6))
+    # lgb.plot_importance(model, importance_type="gain", max_num_features=20,figsize=(12,6))
     plt.show()
     return y_pred, model
