@@ -11,3 +11,5 @@ features/importances/*.png
 */__pycache__/*
 
 *.egg-info/
+
+*.log
