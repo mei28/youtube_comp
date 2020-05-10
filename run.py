@@ -1,5 +1,3 @@
-# %%
-
 import pandas as pd
 import datetime
 import logging
@@ -11,7 +9,7 @@ import numpy as np
 from utils import load_datasets, load_target
 from logs.logger import log_best
 from models.lgbm import train_and_predict
-# %%
+
 
 parser = argparse.ArgumentParser()
 parser.add_argument('--config', default='./configs/default.json')
@@ -22,7 +20,6 @@ now = datetime.datetime.now()
 logging.basicConfig(
     filename='./logs/log_{0:%Y%m%d%H%M%S}.log'.format(now), level=logging.DEBUG
 )
-
 logging.debug('./logs/log_{0:%Y%m%d%H%M%S}.log'.format(now))
 
 feats = config['features']
@@ -30,8 +27,8 @@ logging.debug(feats)
 
 target_name = config['target_name']
 
-X_train_all, X_test = load_datasets(feats=feats)
-y_train_all = load_target(target_name=target_name)
+X_train_all, X_test = load_datasets(feats)
+y_train_all = load_target(target_name)
 logging.debug(X_train_all.shape)
 
 y_preds = []
@@ -39,23 +36,18 @@ models = []
 
 lgbm_params = config['lgbm_params']
 
-kf = KFold(n_splits=2, random_state=777, shuffle=True)
-
+kf = KFold(n_splits=3, random_state=0, shuffle=True)
 for train_index, valid_index in kf.split(X_train_all):
     X_train, X_valid = (
         X_train_all.iloc[train_index, :], X_train_all.iloc[valid_index, :]
     )
-    # RMSLE用の変換
-    y_train_all = np.log1p(y_train_all)
     y_train, y_valid = y_train_all[train_index], y_train_all[valid_index]
 
     # lgbmの実行
     y_pred, model = train_and_predict(
         X_train, X_valid, y_train, y_valid, X_test, lgbm_params
     )
-    # RMSLEの逆変換
-    y_pred = np.expm1(y_pred)
-    y_pred[y_pred < 0] = 0
+
     # 結果の保存
     y_preds.append(y_pred)
     models.append(model)
@@ -65,26 +57,28 @@ for train_index, valid_index in kf.split(X_train_all):
     logging.debug(pd.DataFrame({'features': X_train.columns, 'importance': model.feature_importance(
     )}).sort_values('importance', ascending=False))
 
-scores = [m.best_score['valid_0'][config['loss']] for m in models]
-
-score = sum(scores)/len(scores)
-
-print("=====CV scores=====")
+# CVスコア
+scores = [
+    m.best_score['valid_0'][config['loss']] for m in models
+]
+score = sum(scores) / len(scores)
+print('===CV scores===')
 print(scores)
 print(score)
-logging.debug('=====CV Scores=====')
+logging.debug('===CV scores===')
 logging.debug(scores)
 logging.debug(score)
 
-
-# submitファイルを作る
-id_name = config['id']
-sub = pd.DataFrame(pd.read_csv('./data/input/test.csv')[id_name])
+# submitファイルの作成
+ID_name = config['ID_name']
+sub = pd.DataFrame(pd.read_csv('./data/input/test.csv')[ID_name])
 
 y_sub = sum(y_preds) / len(y_preds)
 
-sub[target_name] = y_sub
+# if y_sub.shape[1] > 1:
+#     y_sub = np.argmax(y_sub, axis=1)
 
+sub[target_name] = y_sub
 
 sub.to_csv(
     './data/output/sub_{0:%Y%m%d%H%M%S}_{1}.csv'.format(now, score),
