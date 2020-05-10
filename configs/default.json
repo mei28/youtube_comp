@@ -44,5 +44,5 @@
   },
   "loss": "rmse",
   "target_name": "y",
-  "id": "id"
+  "ID_name": "id"
 }
